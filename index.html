@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soumi - Developer Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<!-- ------------------Intro-------------------- -->
+    <div id="header">
+        <div class="intro-container">
+            <nav>
+                <div class="logo">SOUMI</div>
+                <ul>
+                    <li><a href="#intro-container">Home</a></li>
+                    <li><a href="#about-me">About</a></li>
+                    <li><a href="#skills-container">Skills</a></li>
+                    <li><a href="#projects-container">Projects</a></li>
+                    <li><a href="#contact-container">Contact</a></li>
+                </ul>
+                </div>
+            </nav>
+            <div class="header-text">
+                <h1>Hi, This is <span>Soumi</span><br>from India</h1>
+                <p>I'm a passionate <strong><span id="element"></span></strong></p>    
+            </div>
+        </div>
+    </div>
+
+    <!-- -------------about-------------------- -->
+
+    <hr>
+    <section class="about-me">
+        <div class="about-col-1">
+            <img src="image2.png">
+        </div>
+        <div class="bio">
+            <h2>About Me</h2>
+            <p>I am a passionate web developer with experience in HTML, CSS, JavaScript, and other web technologies. I enjoy creating responsive and user-friendly websites.</p>
+            <ul>
+                <li><strong>Education and Academic Journey:</strong> I did my undergraduate work at Burdwan MUC Women's College with a CGPA of 9.28. Now I am pursuing my master's degree from Burdwan University.</li>
+                <li><strong>Passion and Interests:</strong> I like to spend my time designing web pages with my own ideas, and I want to explore more and more about web development, rather than web technologies.</li>
+                <li><strong>Career Goals:</strong> In the future, I want to be a software developer and want to experience updated technologies.</li>
+            </ul>
+            <a href="path/to/your-cv.pdf" download="Tss_CV.pdf" class="button">Download CV</a>
+        </div>
+    </section>
+
+<!-- -------------------------------------------skills-------------------------------- -->
+
+    <hr>
+    <section class="skills-container">
+        <header>
+            <h1>My Skills</h1>
+        </header>
+        <div class="skills">
+            <div class="skill">
+                <h2>MS Office</h2>
+                <p>PPT, Files and Excel</p>
+            </div>
+            <div class="skill">
+                <h2>Web Development</h2>
+                <p>Intermediate in HTML, CSS, JavaScript, and frameworks like React</p>
+            </div>
+    
+            <div class="skill">
+                <h2>Backend Development</h2>
+                <p>inetermediate in Python, Flask Api and MySql</p>
+            </div>   
+        </div>    
+    </section>
+
+<!-- -----------------------projects------------------------- -->
+
+    <hr>
+    <section class="projects-container">
+        <header>
+            <h1>My Projects</h1>
+        </header>
+        <div class="project">
+            <h2>3D Model of Burdwan University</h2>
+            <p>developed a 3D animated model of Burdwan University, allowing users to enjoy an animated image of the whole campus via a VR box.</p>
+        </div>
+
+        <div class="project">
+            <h2>Machine Learning Model for Sentiment Analysis</h2>
+            <p>Developed a sentiment analysis model using Python and Django for classifying text data.</p>
+            <p>Implemented natural language processing techniques to analyze sentiment in public posts and comments on social media.</p>
+        </div>
+
+        <div class="project">
+            <h2>Android App</h2>
+            <p>created an Android application that allows users to locate the closest blood bank and determine which blood types are available there.</p>
+        </div>
+    </section>
+
+<!-- --------------------------------contact------------------------------ -->
+    <hr>
+    <div class="contact-container">
+        <div class="contact-form">
+            <h1>Contact Me</h1>
+            <p>Feel free to reach out to me for any inquiries or collaborations!</p>
+            
+            <form action="#" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+                
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+
+        <div class="social-icons">
+            <h2>Get In Touch</h2>
+            <a href="https://gmail.com/samantasoumi10@gmail.com" target="_blank"><img src="mail.png" alt="Gmail"></a>
+            <a href="https://github.com/thesoumisamanta" target="_blank"><img src="github.png" alt="GitHub"></a>
+            <a href="https://www.linkedin.com/in/soumi-samanta-1ba258236" target="_blank"><img src="linkedin.png" alt="LinkedIn"></a>
+            <a href="https://wa.me/+919883057054" target="_blank"><img src="whatsapp.png" alt="WhatsApp"></a>
+        </div>
+    </div>
+<!-- ----------------------------js-------------------- -->
+
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Web Developer', 'Web Designer', 'Video Editor'],
+            typeSpeed: 50,
+            loop: true
+        });
+
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function(e) {
+            e.preventDefault();
+
+            const targetClass = this.getAttribute('href').substring(1);
+            const targetElement = document.querySelector('.' + targetClass);
+
+            if (targetElement) {
+                targetElement.scrollIntoView({ behavior: 'smooth' });
+            }
+        });
+    });
+        
+    </script>
+</body>
+</html>
