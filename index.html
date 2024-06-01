@@ -1,118 +1,171 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Soumi - Developer Portfolio</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <title>Personal projects</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
+
 <body>
-<!-- ------------------Intro-------------------- -->
-    <div id="header">
-        <div class="intro-container">
-            <nav>
-                <div class="logo">SOUMI</div>
-                <ul>
-                    <li><a href="#intro-container">Home</a></li>
-                    <li><a href="#about-me">About</a></li>
-                    <li><a href="#skills-container">Skills</a></li>
-                    <li><a href="#projects-container">Projects</a></li>
-                    <li><a href="#contact-container">Contact</a></li>
-                </ul>
-                </div>
-            </nav>
-            <div class="header-text">
-                <h1>Hi, This is <span>Soumi</span><br>from India</h1>
-                <p>I'm a passionate <strong><span id="element"></span></strong></p>    
-            </div>
-        </div>
-    </div>
 
-    <!-- -------------about-------------------- -->
+    <!-- ----------------------navbar------------- -->
 
-    <hr>
-    <section class="about-me">
-        <div class="about-col-1">
-            <img src="image2.png">
+    <header class="header">
+        <div class="logo">
+            <a href="https://www.facebook.com/profile.php?id=61560303572841" class="logo1">TSS</a>
         </div>
-        <div class="bio">
-            <h2>About Me</h2>
-            <p>I am a passionate web developer with experience in HTML, CSS, JavaScript, and other web technologies. I enjoy creating responsive and user-friendly websites.</p>
+
+
+        <i class="fa-solid fa-bars" id="menu-icon"></i>
+
+        <nav class="navbar">
+            <a href="#home" class="active">Home</a>
+            <a href="#about" class="active">About</a>
+            <a href="#skills" class="active">Skills</a>
+            <a href="#projects" class="active">Projects</a>
+            <a href="#contact" class="active">Contact</a>
+        </nav>
+    </header>
+
+    <!-- ---------------------home---------------------- -->
+
+    <section class="home" id="home">
+        <div class="home-content">
+            <h1>Hi, This is <span>Soumi</span><br>from India</h1>
+            <p class="para">I'm a passionate <strong><span id="element"></span></strong></p>
+
+        </div>
+        <div class="home-img">
+            <img src="img.jpg" alt="">
+        </div>
+    </section>
+
+    <!-- ------------------about----------------------------- -->
+    <section class="about" id="about">
+        <div class="about-img">
+            <img src="img1.png" alt="">
+        </div>
+        <div class="about-content">
+            <h2 class="heading">About Me</h2>
+            <p>I am a passionate web developer with experience in HTML, CSS, JavaScript, and other web technologies. I
+                enjoy creating responsive and user-friendly websites.</p>
             <ul>
-                <li><strong>Education and Academic Journey:</strong> I did my undergraduate work at Burdwan MUC Women's College with a CGPA of 9.28. Now I am pursuing my master's degree from Burdwan University.</li>
-                <li><strong>Passion and Interests:</strong> I like to spend my time designing web pages with my own ideas, and I want to explore more and more about web development, rather than web technologies.</li>
-                <li><strong>Career Goals:</strong> In the future, I want to be a software developer and want to experience updated technologies.</li>
+                <li><strong>Education and Academic Journey:</strong> I did my undergraduate work at Burdwan MUC Women's
+                    College with a CGPA of 9.28. Now I am pursuing my master's degree from Burdwan University.</li>
+                <li><strong>Passion and Interests:</strong> I like to spend my time designing web pages with my own
+                    ideas, and I want to explore more and more about web development, rather than web technologies.</li>
+                <li><strong>Career Goals:</strong> In the future, I want to be a software developer and want to
+                    experience updated technologies.</li>
             </ul>
-            <a href="path/to/your-cv.pdf" download="Tss_CV.pdf" class="button">Download CV</a>
+            <a href="path/to/TSS(CV)-NEW.pdf" class="btn" download>Download CV</a>
         </div>
     </section>
 
-<!-- -------------------------------------------skills-------------------------------- -->
 
-    <hr>
-    <section class="skills-container">
-        <header>
-            <h1>My Skills</h1>
-        </header>
-        <div class="skills">
-            <div class="skill">
-                <h2>MS Office</h2>
-                <p>PPT, Files and Excel</p>
+    <!-- ---------------------skills-------------- -->
+
+    <section class="skills" id="skills">
+        <h2 class="heading">My <span>skills</span></h2>
+        <div class="skills-content">
+            <div class="skills-container">
+                <div class="skills-box">
+                    <h3>MS Office</h3>
+                    <p>Proficient in Microsoft Office Suite (Word, Excel, PowerPoint, Outlook) with advanced skills in
+                        document creation, data
+                        analysis, presentation design, and email management.</p>
+                </div>
+
+                <div class="skills-container">
+                    <div class="skills-box">
+                        <h3>Web Development</h3>
+                        <p>Experienced in Frontend Development with expertise in HTML, CSS, JavaScript, and modern
+                            frameworks such as React. Proficient in creating responsive and user-friendly web
+                            interfaces. </p>
+                    </div>
+                </div>
+
+                <div class="skills-container">
+                    <div class="skills-box">
+                        <h3>Web Development</h3>
+                        <p>Capable of building powerful backend systems using Python along with frameworks like Flask
+                            and Django, and leveraging
+                            MongoDB for efficient data management.</p>
+                    </div>
+                </div>
             </div>
-            <div class="skill">
-                <h2>Web Development</h2>
-                <p>Intermediate in HTML, CSS, JavaScript, and frameworks like React</p>
+    </section>
+
+    <!-- ------------------projects-------------------------  -->
+    <section class="projects" id="projects">
+        <h2 class="heading">Latest <span>Projects</span></h2>
+        <div class="projects-content">
+            <div class="projects-container">
+                <div class="projects-box">
+                    <img src="project1.png" alt="">
+                    <div class="projects-layer">
+                        <h4>Travel Diary</h4>
+                        <p>Visit Github To check it out</p>
+                        <div class="open">
+                            <a href="https://github.com/thesoumisamanta/Travel-Blog">Open</a>
+                        </div>
+
+                    </div>
+                </div>
             </div>
-    
-            <div class="skill">
-                <h2>Backend Development</h2>
-                <p>inetermediate in Python, Flask Api and MySql</p>
-            </div>   
-        </div>    
-    </section>
 
-<!-- -----------------------projects------------------------- -->
+            <div class="projects-container">
+                <div class="projects-box">
+                    <img src="project2.png" alt="">
+                    <div class="projects-layer">
+                        <h4>Blog Post</h4>
+                        <p>Visit Github To check it out</p>
+                        <div class="open">
+                            <a href="https://github.com/thesoumisamanta/Blog-Post">Open</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
-    <hr>
-    <section class="projects-container">
-        <header>
-            <h1>My Projects</h1>
-        </header>
-        <div class="project">
-            <h2>3D Model of Burdwan University</h2>
-            <p>developed a 3D animated model of Burdwan University, allowing users to enjoy an animated image of the whole campus via a VR box.</p>
-        </div>
-
-        <div class="project">
-            <h2>Machine Learning Model for Sentiment Analysis</h2>
-            <p>Developed a sentiment analysis model using Python and Django for classifying text data.</p>
-            <p>Implemented natural language processing techniques to analyze sentiment in public posts and comments on social media.</p>
-        </div>
-
-        <div class="project">
-            <h2>Android App</h2>
-            <p>created an Android application that allows users to locate the closest blood bank and determine which blood types are available there.</p>
+            <div class="projects-container">
+                <div class="projects-box">
+                    <img src="project3.png" alt="">
+                    <div class="projects-layer">
+                        <h4>Sentiment Analysis</h4>
+                        <p>Visit Github To check it out</p>
+                        <div class="open">
+                            <a href="https://github.com/thesoumisamanta/Sentiment-Analysis">Open</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
-<!-- --------------------------------contact------------------------------ -->
-    <hr>
+    <!-- ------------------------contact-------------- -->
+    <section class="contact" id="contact"></section>
     <div class="contact-container">
         <div class="contact-form">
             <h1>Contact Me</h1>
             <p>Feel free to reach out to me for any inquiries or collaborations!</p>
-            
+
             <form action="#" method="post">
                 <label for="name">Name:</label>
                 <input type="text" id="name" name="name" required>
-                
+
                 <label for="email">Email:</label>
                 <input type="email" id="email" name="email" required>
-                
+
                 <label for="message">Message:</label>
                 <textarea id="message" name="message" required></textarea>
-                
+
                 <button type="submit">Send Message</button>
             </form>
         </div>
@@ -121,12 +174,23 @@
             <h2>Get In Touch</h2>
             <a href="https://gmail.com/samantasoumi10@gmail.com" target="_blank"><img src="mail.png" alt="Gmail"></a>
             <a href="https://github.com/thesoumisamanta" target="_blank"><img src="github.png" alt="GitHub"></a>
-            <a href="https://www.linkedin.com/in/soumi-samanta-1ba258236" target="_blank"><img src="linkedin.png" alt="LinkedIn"></a>
-            <a href="https://wa.me/+919883057054" target="_blank"><img src="whatsapp.png" alt="WhatsApp"></a>
+            <a href="https://www.linkedin.com/in/soumi-samanta-1ba258236" target="_blank"><img src="linkedin.jpg"
+                    alt="LinkedIn"></a>
         </div>
     </div>
-<!-- ----------------------------js-------------------- -->
+    </section>
+    <!-- ------------------footer-------------- -->
+    <footer class="footer">
+        <div class="footer-text">
+            <p>Copyright &copy; thesoumisamanta | All Rights Reserved.</p>
+        </div>
 
+        <div class="footer-iconTop">
+            <a href="#home"><i class="fa-solid fa-angle-up"></i></a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
     <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
     <script>
         var typed = new Typed('#element', {
@@ -136,18 +200,19 @@
         });
 
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-        anchor.addEventListener('click', function(e) {
-            e.preventDefault();
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
 
-            const targetClass = this.getAttribute('href').substring(1);
-            const targetElement = document.querySelector('.' + targetClass);
+                const targetClass = this.getAttribute('href').substring(1);
+                const targetElement = document.querySelector('.' + targetClass);
 
-            if (targetElement) {
-                targetElement.scrollIntoView({ behavior: 'smooth' });
-            }
+                if (targetElement) {
+                    targetElement.scrollIntoView({ behavior: 'smooth' });
+                }
+            });
         });
-    });
-        
+
     </script>
 </body>
+
 </html>
