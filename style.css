@@ -9,13 +9,13 @@
 
 :root {
     --bg-color: black;
-    /* Background color */
+
     --snd-bg-color: rgb(37, 36, 36);
-    /* Secondary background color */
+
     --text-color: #fff;
-    /* Text color */
+
     --main-color: rgb(1, 1, 67);
-    /* Main color */
+
 
 }
 
@@ -31,6 +31,7 @@ body {
     color: var(--text-color);
     font-size: 1.6rem;
     line-height: 1.6;
+    overflow-x: hidden;
 }
 
 section {
@@ -85,7 +86,7 @@ section {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 90vh;
+   
 }
 
 
@@ -190,7 +191,6 @@ section {
     gap: 5rem;
     background: var(--snd-bg-color);
     margin-bottom: 1rem;
-    height: 70vh;
 }
 
 .about-img img {
@@ -240,15 +240,13 @@ section {
 .skills-content {
     display: flex;
     margin-bottom: 2rem;
+    align-items: center;
+    justify-content: center;
+    gap: 4rem;
 }
 
-.skills-container {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 2rem;
-}
 
-.skills-container .skills-box {
+.skills-container  {
     flex: 1 1 30rem;
     background: var(--snd-bg-color);
     padding: 3rem 2rem 4rem;
@@ -256,10 +254,11 @@ section {
     border-radius: 2rem;
     border: .2rem solid var(--bg-color);
     transition: .5s ease;
-    width: 400px;
+    width: 350px;
+    height: auto;
 }
 
-.skills-container .skills-box:hover {
+.skills-container:hover {
     border-color: white;
     transform: scale(1.02);
 }
@@ -283,7 +282,6 @@ section {
     background: var(--snd-bg-color);
     padding: 0;
     overflow: hidden;
-    height: 70vh;
 }
 
 .projects-content {
@@ -375,7 +373,6 @@ section {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    /* Align items at the top */
 }
 
 .contact-form {
@@ -435,11 +432,12 @@ button:hover {
     flex-direction: column;
     align-items: center;
     margin-top: 5rem;
+    margin-left: 40px;
 }
 
-.social-icons h2 {
+.social h2 {
     font-size: 24px;
-    margin-bottom: 20px;
+    margin-top: 100px;
 }
 
 .social-icons a {
@@ -466,7 +464,7 @@ button:hover {
     align-items: center;
     flex-wrap: wrap;
     background: var(--snd-bg-color);
-    height: 40px;
+    
 }
 
 .footer-text {
@@ -478,18 +476,14 @@ button:hover {
     display: inline-flex;
     justify-content: center;
     align-items: center;
-    background: rgb(22, 171, 240);
-    border-radius: .8rem;
-    transition: .5s ease;
     margin-right: 50px;
 }
 
-.footer-iconTop a:hover {
-    box-shadow: 0 0 1rem var(--main-color);
+.footer-iconTop a i:hover {
+    color: red;
 }
 
 .footer-iconTop a i {
     font-size: 3rem;
-    color: pink
-    
+    color: rgb(249, 242, 243)
 }

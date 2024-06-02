@@ -4,8 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Personal projects</title>
+    <title>TSS Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="response.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -33,6 +34,7 @@
             <a href="#projects" class="active">Projects</a>
             <a href="#contact" class="active">Contact</a>
         </nav>
+        <!-- <div id="menu-icon" onclick="toggleMenu()">☰</div> -->
     </header>
 
     <!-- ---------------------home---------------------- -->
@@ -79,28 +81,27 @@
                 <div class="skills-box">
                     <h3>MS Office</h3>
                     <p>Proficient in Microsoft Office Suite (Word, Excel, PowerPoint, Outlook) with advanced skills in
-                        document creation, data
-                        analysis, presentation design, and email management.</p>
-                </div>
-
-                <div class="skills-container">
-                    <div class="skills-box">
-                        <h3>Web Development</h3>
-                        <p>Experienced in Frontend Development with expertise in HTML, CSS, JavaScript, and modern
-                            frameworks such as React. Proficient in creating responsive and user-friendly web
-                            interfaces. </p>
-                    </div>
-                </div>
-
-                <div class="skills-container">
-                    <div class="skills-box">
-                        <h3>Web Development</h3>
-                        <p>Capable of building powerful backend systems using Python along with frameworks like Flask
-                            and Django, and leveraging
-                            MongoDB for efficient data management.</p>
-                    </div>
+                        document creation, data analysis, presentation design, and email management.</p>
                 </div>
             </div>
+            <div class="skills-container">
+                <div class="skills-box">
+                    <h3>Web Development</h3>
+                    <p>Experienced in Frontend Development with expertise in HTML, CSS, JavaScript, and modern
+                        frameworks such as React. Proficient in creating responsive and user-friendly web
+                        interfaces. </p>
+                </div>
+            </div>
+
+            <div class="skills-container">
+                <div class="skills-box">
+                    <h3>Web Development</h3>
+                    <p>Capable of building powerful backend systems using Python along with frameworks like Flask
+                        and Django, and leveraging
+                        MongoDB for efficient data management.</p>
+                </div>
+            </div>
+        </div>
     </section>
 
     <!-- ------------------projects-------------------------  -->
@@ -170,12 +171,16 @@
             </form>
         </div>
 
-        <div class="social-icons">
+        <div class="social">
             <h2>Get In Touch</h2>
-            <a href="https://gmail.com/samantasoumi10@gmail.com" target="_blank"><img src="mail.png" alt="Gmail"></a>
-            <a href="https://github.com/thesoumisamanta" target="_blank"><img src="github.png" alt="GitHub"></a>
-            <a href="https://www.linkedin.com/in/soumi-samanta-1ba258236" target="_blank"><img src="linkedin.jpg"
-                    alt="LinkedIn"></a>
+            <div class="social-icons">
+                <a href="https://gmail.com/samantasoumi10@gmail.com" target="_blank"><img src="mail.png"
+                        alt="Gmail"></a>
+                <a href="https://github.com/thesoumisamanta" target="_blank"><img src="github.png" alt="GitHub"></a>
+                <a href="https://www.linkedin.com/in/soumi-samanta-1ba258236" target="_blank"><img src="linkedin.jpg"
+                        alt="LinkedIn"></a>
+
+            </div>
         </div>
     </div>
     </section>
@@ -190,29 +195,12 @@
         </div>
     </footer>
 
+
+
+
     <script src="script.js"></script>
     <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
-    <script>
-        var typed = new Typed('#element', {
-            strings: ['Web Developer', 'Web Designer', 'Video Editor'],
-            typeSpeed: 50,
-            loop: true
-        });
-
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-
-                const targetClass = this.getAttribute('href').substring(1);
-                const targetElement = document.querySelector('.' + targetClass);
-
-                if (targetElement) {
-                    targetElement.scrollIntoView({ behavior: 'smooth' });
-                }
-            });
-        });
-
-    </script>
+    
 </body>
 
 </html>

@@ -1,85 +1,219 @@
-/* ---------Responsiveness------- */
-
-@media(max-width: 1200px){
-    html{
-        font-size: 55%;
-    }
-}
-@media(max-width: 991px){
-    .header{
-        padding: 2rem 3%;
-    }
-    .section{
-        padding: 10rem 3%;
-    }
-    .services{
-        padding: 7rem;
-    }
-    .portfolio{
-        padding-bottom: 7rem;
-    }
-    .contact{
-        min-height: auto;
-    }
-    .footer{
-        padding: 2rem 3%;
+@media (max-width: 600px) {
+    .navbar {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        background-color: var(--bg-color);
+        text-align: center;
     }
 
-}
-@media(max-width: 768px){
-    #menu-icoh{
+    .navbar a {
+        padding: 1rem;
+        /* border-top: 1px solid var(--text-color); */
+        margin-left: 0;
+    }
+
+    .navbar a:last-child {
+        border-bottom: 1px solid var(--text-color);
+    }
+
+    .navbar.show {
+        display: flex;
+    }
+
+    #menu-icon {
         display: block;
     }
-    .home{
+
+    .home {
+        display: flex;
+        flex-direction: column;
+        /* Stack content vertically */
+        align-items: center;
+        padding-top: 10rem;
+    }
+
+    .home-content {
+        text-align: center;
+        /* Center align the introduction text */
+        /* margin-bottom: 0.5rem; */
+    }
+
+    .home-content h1 {
+        font-size: 4rem;
+        /* Adjust font size for better visibility */
+    }
+
+    .home-img img {
+        width: 50vw;
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+
+    .about {
         flex-direction: column;
     }
-    .home-content h3{
-        font-size: 2.6rem;
+
+    .about-img img {
+        width: 40vw;
+        margin-bottom: 1rem;
+        margin-top: 1rem;
     }
-    .home-content h1{
-        font-size: 5rem;
+
+    .about-content {
+        margin-left: 0;
+        text-align: center;
     }
-    .home-content{
-        order: 2;
-    }
-    .home-img img{
-        width: 70vw;
-        margin-top: 4rem;
-    }
-    .about{
+
+    .skills-content {
+        display: flex;
         flex-direction: column;
+
     }
-    .about-img img{
-        width: 90vw;
-        margin-top: 4rem;
+
+    .skills-box {
+        width: 50vw;
     }
-    .services h2{
-        margin-bottom: 3rem;
-    }
-    .portfolio h2{
-        margin-bottom: 3rem;
-    }
-    .portfolio-container{
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
-@media(max-width: 617px){
-    .portfolio-container{
-        grid-template-columns: 1fr;
-    }
-    .home-img img{
+
+    .projects-box img {
         width: 80vw;
+        height: auto;
     }
-    .about-img img{
-        width: 80vw;
-        margin-top: 4rem;
+
+    .contact-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
-}
-@media(max-width: 450px){
-    html{
-        font-size: 50%;
+
+    .social h2 {
+        text-align: center;
+
     }
-    .contact form .input-box input{
+
+    .social-icons {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-top: 1rem;
+        gap: 10px;
+    }
+
+    .social-icons a {
+        display: inline-block;
+        margin: 0.5rem;
+    }
+
+    .contact-form,
+    .contact-info {
         width: 100%;
+        text-align: center;
+    }
+
+    footer {
+        display: flex;
+        flex-direction: row;
+
+    }
+
+    .footer-iconTop {
+        order: 2;
+
+        margin: 1rem 1rem;
+    }
+
+    .footer-iconTop a i {
+
+        font-size: 2.5rem;
+
+        cursor: pointer;
+    }
+
+}
+
+/* Medium devices (600px to 1024px) */
+@media (min-width: 601px) and (max-width: 1024px) {
+    .navbar a {
+        font-size: 1.6rem;
+        margin-left: 2.5rem;
+    }
+
+    .home-img img {
+        width: 40vw;
+        margin-left: 10rem;
+    }
+
+    .about {
+        flex-direction: column;
+    }
+
+    .about-img img {
+        width: 30vw;
+        margin-bottom: 2rem;
+    }
+
+    .about-content {
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .skills-content {
+        flex-direction: column;
+    }
+
+    .projects-box img {
+        width: 70vw;
+        height: auto;
+    }
+
+    .contact-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .social h2 {
+        text-align: center;
+        /* margin-top: -10px; */
+    }
+
+    .social-icons {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 1rem;
+    }
+
+    .social-icons a {
+        display: inline-block;
+        margin: 0.5rem;
+    }
+
+    .contact-form,
+    .contact-info {
+        width: 100%;
+        text-align: center;
+    }
+
+    footer {
+        display: flex;
+        flex-direction: row;
+
+    }
+
+    .footer-iconTop {
+        order: 2;
+
+        margin: 1rem 1rem;
+    }
+
+    .footer-iconTop a i {
+
+        font-size: 2.5rem;
+
+        cursor: pointer;
     }
 }
