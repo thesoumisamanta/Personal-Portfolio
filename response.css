@@ -12,7 +12,6 @@
 
     .navbar a {
         padding: 1rem;
-        /* border-top: 1px solid var(--text-color); */
         margin-left: 0;
     }
 
@@ -31,20 +30,18 @@
     .home {
         display: flex;
         flex-direction: column;
-        /* Stack content vertically */
         align-items: center;
         padding-top: 10rem;
     }
 
     .home-content {
         text-align: center;
-        /* Center align the introduction text */
-        /* margin-bottom: 0.5rem; */
+
     }
 
     .home-content h1 {
         font-size: 4rem;
-        /* Adjust font size for better visibility */
+
     }
 
     .home-img img {
@@ -134,7 +131,7 @@
 
 }
 
-/* Medium devices (600px to 1024px) */
+
 @media (min-width: 601px) and (max-width: 1024px) {
     .navbar a {
         font-size: 1.6rem;
